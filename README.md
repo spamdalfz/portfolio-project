@@ -10,13 +10,19 @@
 
 - Follow links to projects I have worked on.
 - Get in touch with me in the 'Contact Me' Section.
+---
 
-![Alt text](/assets/images/screenshot.JPG.jpg?raw=true "webite screenshot")
+## Screenshot
+
+![Alt text](/assets/images/screenshot.JPG?raw=true)
 
 ---
 
 ## Links
 
+- https://spamdalfz.github.io/portfolio-project
+
+- https://github.com/spamdalfz/portfolio-project
 
 
 ---
