@@ -118,7 +118,6 @@ nav a:hover {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
-
 }
 
 .project-section h2 {
@@ -132,14 +131,16 @@ nav a:hover {
 
 .project-container {
     display: flex;
-    flex-wrap: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    min-width: 75%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-
+    justify-content: center;
+    /* Center the project items */
+    width: 100%;
+    /* Make sure the items take up the full width of the container */
+    max-width: 1100px;
+    /* Set a maximum width for the container */
+    margin: auto;
+    /* Center the container horizontally */
 }
 
 .project-item {
@@ -157,6 +158,14 @@ nav a:hover {
     background-blend-mode: soft-light;
     background-size: 150%;
     font-size: .9rem;
+}
+
+.project-item.group-project {
+    min-height: 300px;
+    max-height: 400px;
+    flex-basis: 98%;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .project-item div {
@@ -214,4 +223,8 @@ nav a:hover {
 
 .prework-study-guide {
     background-image: url("../images/prework.JPG");
+}
+
+.group-project {
+    background-image: url("../images/group-project.JPG");
 }
