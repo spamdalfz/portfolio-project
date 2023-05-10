@@ -160,14 +160,6 @@ nav a:hover {
     font-size: .9rem;
 }
 
-.project-item.group-project {
-    min-height: 300px;
-    max-height: 400px;
-    flex-basis: 98%;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
 .project-item.pollstraw {
     min-height: 300px;
     max-height: 400px;
@@ -242,6 +234,11 @@ nav a:hover {
 
 .group-project {
     background-image: url("../images/group-project.JPG");
+    background-size: 100%;
+}
+
+.back-end {
+    background-image: url("../images/ecommerce.JPG");
     background-size: 100%;
 }
 
