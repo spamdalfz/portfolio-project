@@ -20,7 +20,7 @@
 
 ## Links
 
-- https://spamdalfz.github.io/portfolio-project
+- [cvasserportfolio.com](https://www.cvasserportfolio.com/)
 
 - https://github.com/spamdalfz/portfolio-project
 
