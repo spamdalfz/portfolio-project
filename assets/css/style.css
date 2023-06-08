@@ -4,11 +4,11 @@
 
 /* brand color palette */
 :root {
-    --primary: #384554;
-    --secondary: #8cb1c6;
-    --tertiary: #1a559a;
-    --dark: #181b2c;
-    --light: #eeeee4;
+    --primary: #252934;
+    --secondary: #6d788c;
+    --tertiary: #3d5170;
+    --dark: #cfa9a9;
+    --light: #303846;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--dark);
-    background-color: var(--light);
+    background-color: #141618;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--primary);
+    background-color: #141618;
 }
 
 header h1 {
@@ -36,7 +36,7 @@ header h1 {
     margin: 0;
     font-size: 350%;
     line-height: 1.25;
-    box-shadow: 3px 3px 3px 3px var(--tertiary);
+    box-shadow: 3px 3px 3px 3px #fcabfd;
 }
 
 nav {
@@ -72,7 +72,7 @@ nav a:hover {
     background-color: var(--secondary);
     padding: 8px;
     color: var(--primary);
-    box-shadow: 3px 3px 3px 3px var(--dark);
+    box-shadow: 3px 3px 3px 3px #fcabfd;
     font-size: 175%;
 }
 
@@ -93,7 +93,7 @@ nav a:hover {
     padding-right: 25px;
     font-size: 4vw;
     line-height: 1.1;
-    border-right: solid var(--primary);
+    border-right: solid #fcabfd;
 
 }
 
@@ -105,6 +105,7 @@ nav a:hover {
     margin-top: 60px;
     margin-bottom: 20px;
     margin-right: 20px;
+    font-size: 1vw;
 
 }
 
@@ -126,7 +127,7 @@ nav a:hover {
     padding-right: 25px;
     font-size: 4vw;
     line-height: 1.1;
-    border-right: solid var(--primary);
+    border-right: solid #fcabfd;
 }
 
 .project-container {
@@ -144,7 +145,7 @@ nav a:hover {
 }
 
 .project-item {
-    border: 5px solid var(--primary);
+    border: 5px solid #fcabfd;
     background-color: var(--light);
     color: var(--dark);
     min-height: 150px;
@@ -152,15 +153,16 @@ nav a:hover {
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
-    padding: 0 0 20px 0;
+    padding: 0 0 30px 0;
     margin: 0.5em;
     text-decoration: none;
-    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
     background-size: 150%;
-    font-size: .9rem;
+    font-size: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.project-item.pollstraw {
+.project-item.employee-tracker {
     min-height: 300px;
     max-height: 400px;
     flex-basis: 98%;
@@ -194,7 +196,7 @@ nav a:hover {
     padding-right: 25px;
     font-size: 2vw;
     line-height: 1.1;
-    border-right: solid var(--primary);
+    border-right: solid #fcabfd;
 }
 
 .contact-section div {
@@ -208,7 +210,7 @@ nav a:hover {
 
 .contact-section div a {
     padding: 40px 125px;
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .contact-section div a:hover {
@@ -217,9 +219,14 @@ nav a:hover {
 }
 
 /* portfolio project images */
-.pollstraw {
-    background-image: url("../images/pollstraw.JPG");
+.employee-tracker {
+    background-image: url("../images/employeetracker.JPG");
     background-size: 100%;
+}
+
+.note-taker {
+    background-image: url("../images/note-taker.JPG");
+    background-size: 90%;
 }
 
 .weather-dashboard {
@@ -227,8 +234,13 @@ nav a:hover {
     background-size: 100%;
 }
 
-.calendar-app {
-    background-image: url("../images/daily-planner.JPG");
+.daily-planner {
+    background-image: url("../images/dailyplanner.JPG");
+    background-size: 100%;
+}
+
+.readme-generator {
+    background-image: url("../images/readmegen.JPG");
     background-size: 100%;
 }
 
@@ -242,41 +254,23 @@ nav a:hover {
     background-size: 100%;
 }
 
-/* Add a media query for mobile devices */
 /* Small tablets and large smartphones (landscape view) */
 @media (max-width: 767px) {
-    header h1 {
-        font-size: 250%;
-    }
-
-    nav {
+    body {
         font-size: 100%;
+        /* adjust this value as necessary */
     }
 
-    .hero-banner h2 {
-        font-size: 125%;
+    .project-item,
+    .about-section,
+    .contact-section {
+        overflow: hidden;
     }
 
-    .about-section h2,
-    .project-section h2,
-    .contact-section h2 {
-        font-size: 6vw;
-    }
-
-    .project-item {
-        flex-basis: calc(100% - 1em);
-    }
-
-    .contact-section div a {
-        padding: 20px 50px;
-    }
-}
-
-/* Small smartphones (portrait view) */
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: center;
+    .about-section p,
+    .contact-section p {
+        font-size: 1.2rem;
+        padding: 10px;
     }
 
     header h1 {
@@ -285,17 +279,83 @@ nav a:hover {
 
     nav {
         font-size: 100%;
-        margin-top: 10px;
     }
 
     .hero-banner h2 {
         font-size: 125%;
     }
 
+    .about-section h2 {
+        padding-left: 37px;
+    }
+
     .about-section h2,
     .project-section h2,
     .contact-section h2 {
-        font-size: 8vw;
+        font-size: 5vw;
+    }
+
+    .project-item {
+        flex-basis: 100%;
+        font-size: 80%;
+    }
+
+    .contact-section div a {
+        padding: 20px 50px;
+        font-size: 100%;
+    }
+
+    .about-section>div,
+    .project-section>div,
+    .contact-section>div {
+        flex-basis: 70%;
+    }
+}
+
+
+
+/* Small smartphones (portrait view) */
+@media (max-width: 480px) {
+    body {
+        font-size: 90%;
+        /* adjust this value as necessary */
+    }
+
+    .project-item,
+    .about-section,
+    .contact-section {
+        overflow: hidden;
+    }
+
+    .about-section p,
+    .contact-section p {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 150%;
+    }
+
+    nav {
+        font-size: 80%;
+        margin-top: 10px;
+    }
+
+    .hero-banner h2 {
+        font-size: 100%;
+    }
+
+    .about-section h2,
+    .project-section h2,
+    .contact-section h2 {
+        font-size: 7vw;
     }
 
     .about-section,
@@ -316,7 +376,8 @@ nav a:hover {
     }
 
     .project-item {
-        flex-basis: calc(100% - 1em);
+        flex-basis: 100%;
+        font-size: 80%;
     }
 
     .contact-section div {
@@ -326,5 +387,6 @@ nav a:hover {
     .contact-section div a {
         padding: 20px 25px;
         margin-bottom: 10px;
+        font-size: 80%;
     }
 }
