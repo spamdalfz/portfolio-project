@@ -77,9 +77,9 @@ nav a:hover {
 }
 
 .profile-image {
-    width: 125px;
+    width: 165px;
     /* Adjust as needed */
-    height: 125px;
+    height: 165px;
     /* Adjust as needed */
     border-radius: 50%;
     object-fit: cover;
