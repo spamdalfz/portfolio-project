@@ -146,8 +146,9 @@ nav a:hover {
 
 .project-item {
     border: 5px solid #fcabfd;
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: #3b303b;
+    color: #d2eaf7;
+    text-shadow: 2px 2px 4px #000000;
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -159,7 +160,6 @@ nav a:hover {
     background-blend-mode: multiply;
     background-size: 150%;
     font-size: 100%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .project-item.employee-tracker {
